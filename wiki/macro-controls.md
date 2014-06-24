@@ -1,9 +1,6 @@
----
-layout: wiki
-title: 介绍几个常用的宏的作用
----
 
-# {{ page.title }}
+#  介绍几个常用的宏的作用
+
 
 在Crazyflie的固件代码中，宏一般都定义在文件Makefile中。使用`CFLAGS += -D`的方式添加。
 

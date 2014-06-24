@@ -1,9 +1,6 @@
----
-layout: wiki
-title: STM32开发环境搭建-linux
----
 
-# {{ page.title }}
+#  STM32开发环境搭建-linux
+
 
 Crazepony飞控主板使用STM32作为主控制器，下面主要介绍如何在ubuntu系统下进行STM32固件的开发/编译/下载。
 

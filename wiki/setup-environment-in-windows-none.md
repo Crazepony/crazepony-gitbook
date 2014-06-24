@@ -1,9 +1,6 @@
----
-layout: wiki
-title: Windows下开发环境搭建-裸机版本
----
 
-# {{ page.title }}
+#  Windows下开发环境搭建-裸机版本
+
 
 IDE开发工具Keil v4.10下载地址：Crazepony百度云网盘[Keil-uVision4-MDK4-12.zip](http://pan.baidu.com/s/1ntNqLdv)。
 

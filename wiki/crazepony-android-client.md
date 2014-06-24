@@ -1,9 +1,6 @@
----
-layout: wiki
-title: Crazepony Android客户端
----
 
-# {{ page.title }}
+#  Crazepony Android客户端
+
 
 Crazepony的Android客户端源代码也是托管在github的crazepony项目下，点击[这里](https://github.com/Crazepony/crazepony-android-client)查看。可以直接下载zip压缩包，也可以通过git clone到本地。
 

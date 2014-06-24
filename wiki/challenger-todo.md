@@ -1,9 +1,6 @@
----
-layout: wiki
-title: Crazepony擂台榜
----
 
-# {{ page.title }}
+#  Crazepony擂台榜
+
 
 Crazepony四轴飞行器还只是一个原型，在我们提供的原型机上还有很大的发挥空间。这是Crazepony官方的擂台榜。迎接这些挑战，你准备好了吗？
 

@@ -1,9 +1,6 @@
----
-layout: wiki
-title: 如何参与站点建设
----
 
-# {{ page.title }}
+#  如何参与站点建设
+
 
 ## Crazepony站点
 Crazepony网站包括了[Crazepony主站](http://crazepony.github.io/index-cn.html)，[Crazepony Wiki](http://crazepony.github.io/wiki.html)百科站点，[Crazepony Blog](http://crazepony.github.io/blog.html)博客站点。

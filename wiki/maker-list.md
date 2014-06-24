@@ -1,7 +1,3 @@
----
-layout: wiki
-title: 创客/开源硬件名人录
----
 
 ## Dale Dougherty
 《Make》杂志和Maker Faire大会的创办人

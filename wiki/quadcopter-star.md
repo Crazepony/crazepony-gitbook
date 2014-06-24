@@ -1,9 +1,6 @@
----
-layout: wiki
-title: 四轴飞行器明星产品
----
 
-# {{ page.title }}
+#  四轴飞行器明星产品
+
 
 ## Phantom
 
