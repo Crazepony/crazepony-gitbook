@@ -55,26 +55,6 @@ $ git push
 
 ```
 
-## ubuntu下搭建jekyll调试环境
-由于使用了jekyll框架，所以在本地调试时需要安装jekyll。在ubuntu中使用下面的命令安装jekyll：
-
-```
-//jekyll是用ruby写的，所以需要先安装ruby开发环境
-$ sudo apt-get install ruby
-$ sudo apt-get install ruby-dev
-$ sudo gem install rdoc
-
-//安装jekyll
-$ gem install jekyll
-
-//进入站点源码目录，并且开启jekyll服务
-$ cd crazepony.github.io
-$ jekyll serve
-
-```
-
-开启jekyll服务之后，在站点源代码下，会生成一个名为_site的目录，该目录下就为站点的静态网页。在浏览器中输入`http://localhost:4000/`，就能够看到站点的效果。
-
 ## 添加新的博客
 
 博客的源文件位于目录_posts下，并且使用markdown语法编写。添加一个新的博客只需要在该目录下添加一个新的markdown文件就可以，但是该文件的命名需要遵守下面的规则：

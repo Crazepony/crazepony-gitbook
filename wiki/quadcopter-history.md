@@ -26,11 +26,3 @@
 
 在此之后的数十年中，四旋翼垂直起降机没有什么大的进展。近十几年来，随着微系统、传感器以及控制理论等技术的发展四旋翼垂直起降机制理论等技术的发展，四旋翼垂直起降机又引起人们极大的兴趣。研究集中在小型或微型四旋翼飞行器的结构、飞行控制以及能源动力等方面。
 
-## 开源四轴飞行器的历史
-在2006年10月24号，Holger Buss和Ingo Busker创造了MK，一个伟大的Mikrokopter四轴社区。 在2007年中，Mikrokopter便像一个“ 空中的钉子”，像一只鸟一样，稳步的停留在空中。这对于开源四轴飞行器是一个很大的里程碑。
-
-MikroKopter来自德国。毫无疑问，MikroKopter这个名字来源于德语，对应的英文应该是MicroCopter。其英文官网地址是[http://www.mikrokopter.de/en/home](http://www.mikrokopter.de/en/home)。
-
-作者在SVN上共享了代码。
-
-![](/assets/img/mikrokopter.png)

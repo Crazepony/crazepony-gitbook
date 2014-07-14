@@ -9,6 +9,9 @@ Dale还是O'Reilly Media的联合创始人，并担任计算机相关书籍的�
 
 《长尾理论》，《创客：新工业革命》作者克里斯·安德森
 
+## LadyAda（Limor Fried）
+[Adafruit](http://www.adafruit.com/)创始人。Adafruit被公认为是开源硬件的一面旗帜，作为CEO的 Fried也被视为创客浪潮的先锋人物。而且是一位女性哦。
+
 ## Tom Igoe
 [Arduino](http://www.arduino.cc/)的联合创始人 
 

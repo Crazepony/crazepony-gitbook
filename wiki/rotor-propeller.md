@@ -10,10 +10,6 @@
 
 ![](/assets/img/motor-wushua.jpg)
 
-下面是关于无刷直流电机原理的讲解。
-
-<embed src="http://player.youku.com/player.php/sid/XMzI4MzkxMTg4/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
-
 ## 电机之空心杯
 空心杯电机（coreless motor）属于直流、永磁、伺服微特电机。空心杯电机在结构上突破了传统电机的转子结构形式，采用的是无铁芯转子。空心杯电机具有十分突出的节能、控制和拖动特性。
 
@@ -27,7 +23,43 @@ Crazepony空心杯高速电机拆解图，可以明显看到线圈中间没有�
 ![](/assets/img/coreless-motor-2.jpg)
 
 ## 桨叶
-桨有两个重要的参数，桨直径和桨螺距。螺距则代表桨旋转一周前进的距离。桨直径和螺距越大，桨能提供的拉（推）力越大。注意桨直径是指桨转动所形成的圆的直径，而不是桨叶的总长度。对于双叶桨（两片桨叶，这是最常用的桨）恰好是两片桨叶长度之和；而对于单叶桨，直径是桨叶的长度*2；而三叶桨，直径就不是桨叶之和了。
+桨有两个重要的参数，桨直径和桨螺距。桨直径是指桨转动所形成的圆的直径，对于双叶桨（两片桨叶，这是最常用的桨）恰好是两片桨叶长度之和。桨螺距则代表桨旋转一周前进的距离。桨直径和螺距越大，桨能提供的拉（推）力越大。
 
-一般来讲，如果想让飞机飞得慢用大桨；飞得快则用小桨。
+那么如何在表示桨叶的桨直径和桨螺距这两个重要参数呢。以Phantom的桨叶为例。Phantom 1使用的是8045的桨叶，表示桨直径为8英寸（8×2.54=20.32厘米），桨螺距为4.5英寸；而Phantom 2使用的是9443的桨叶，表示桨直径为9.4英寸，桨螺距为4.3英寸。从桨叶的规格可以看出，Phantom的第二代能够提供更大的动力。
+
+对于玩大四轴的人来说，桨叶的材质也是非常有考究的。根据桨叶使用材质的不同，现在市面上有的包括**碳桨，木桨，注塑桨**。
+
+**注塑浆**：注塑桨是指使用塑料等复合材料制成的桨叶。在航模爱好者中以美国[APC](http://www.apcprop.com/v/index.html)公司生产的桨叶最为有名，质量最好。淘宝上也有三种大类，分别是原装APC，ATG生产的假APC，以及不知名小厂生产的最廉价的有APC浆外观的塑料桨。
+
+APC浆有一个衍生系列多轴专用的MR系列。优点是增强了浆的硬度，减少了重量，再次提高效率，解决了之前的高速转动浆尖变形问题。缺点是价格较贵，原装价格在89-128之间，并且无合适的垫圈，需要自己找物料缩小孔径。
+
+**木浆**：木浆的材料多为榉木，硬度高，重量轻，经过风干打蜡上漆以后不怕受潮。在航空史上，木桨在早期扮演了非常重要的角色。一战时期的很多飞机都是使用的木桨，后来才逐渐被铁桨取代。专门提供飞行器的木浆的公司[sensenich](http://www.sensenich.com/)。
+
+![](/assets/img/sensenich.jpg)
+
+在航模爱好者中，木桨主要用在固定翼飞行器上，最为高端的是欧洲XOAR公司的木桨。
+
+![](/assets/img/xoar.jpg)
+
+**碳浆**：由于碳纤维的材料原因，它有优异的硬度和合适的浆型。因为浆型原因所以碳浆效率优于木浆。价格比木浆更贵，稍微低于原装APC。
+
+
+下面是一个提供了很多关于螺旋桨知识，历史，设计的网站[heliciel](http://www.heliciel.com/en/Index.htm)。
+
+## 木桨的故事
+木桨在人类航空早期扮演了非常重要的角色。一战时期的很多飞机都是使用的木桨，后来才逐渐被铁桨取代。下面是那个时候木桨的一些珍贵图片。
+
+![](/assets/img/wood-propeller-1.jpg)
+
+![](/assets/img/wood-propeller-2.jpg)
+
+![](/assets/img/wood-propeller-3.jpg)
+
+更多关于木桨的知识，参考[Wooden Propellers](http://woodenpropeller.com/)(A site dedicated to the preservation of early wooden airplane propellers)。
+
+## 扩展阅读
+
+关于无刷直流电机原理的讲解。
+
+<embed src="http://player.youku.com/player.php/sid/XMzI4MzkxMTg4/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 
