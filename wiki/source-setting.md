@@ -14,20 +14,20 @@ Windows操作系统默认文件编码是gbk，又叫做gb2312或者cp936。cp936
 
 Linux操作系统默认文件编码是utf-8，一般用系统宏$LANG表示。
 
-```
+~~~
 $ echo $LANG
 zh_CN.UTF-8
-```
+~~~
 
 下面几个crazepony固件代码文件，就是使用的Windows下的默认编码gb2313。为了在某些工具下（例如gitk工具）中文不显示为乱码，我们要求所有的文件都使用utf-8编码。但是由于我们现在使用的Keil 4不支持utf-8编码，所以utf-8编码的中文在Keil 4下面会显示为乱码，所以这部分固件代码没有使用utf-8编码。
 
-```
+~~~
 $ file User_Src/*
 User_Src/main.c:           ISO-8859 C++ program text
 User_Src/Sys_Fun.c:        ISO-8859 C program text
 User_Src/Sys_Fun.h:        ISO-8859 C program text
 ……
-```
+~~~
 
 
 
@@ -37,8 +37,23 @@ User_Src/Sys_Fun.h:        ISO-8859 C program text
 
 添加.gitattribute文件，可以解决行结束符在多个平台下不一致的问题。
 
-现在使用的.gitattribute配置为：
+~~~
+# Explicitly declare text files we want to always be normalized and converted 
+# to native line endings on checkout.
+* text
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
+*.gif binary
+*.jar binary
+*.so  binary
+style/fonts/* binary
+style/images/* binary
+~~~
+
+上面为现在使用的.gitattribute配置，解释如下：
 
 * 代码库中都为LF，也就是checkin的时候，会把所有文件的行结束符转化为LF；
 * 工作路径下为所在OS的行结束符，也就是在checkout的时候，git回自动根据当前的OS将文件的行结束符做转化；
-* 对于图片，jar库，和so文件等二进制文件，不进行上面的转化；
+* 对于图片（以png/jpg/gif等结尾），jar库，和so文件等二进制文件，不进行转化；

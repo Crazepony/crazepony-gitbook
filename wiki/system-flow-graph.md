@@ -8,7 +8,7 @@
 
 最关心的是系统中由多少个任务在运行。在FreeRTOS下，任务的初始化使用函数。所以，用grep命令参看一下源代码，可以看到一共有下面这些系统初始化的任务：
 
-```
+~~~
 $ grep -inIw 'xTaskCreate' -r ./hal/ ./modules/
 ./hal/src/eskylink.c:312:  xTaskCreate(eskylinkTask, (const signed char * const)"EskyLink",
 ./hal/src/pm.c:111:  xTaskCreate(pmTask, (const signed char * const)"PWRMGNT",
@@ -23,7 +23,7 @@ $ grep -inIw 'xTaskCreate' -r ./hal/ ./modules/
 ./modules/src/param.c:92:   xTaskCreate(paramTask, (const signed char * const)"PARAM",
 ./modules/src/system.c:68:  xTaskCreate(systemTask, (const signed char * const)"SYSTEM",
 
-```
+~~~
 
 所有的任务在创建之后，都会进入`while(1)`的循环中，也就是任务一直循环运行。
 

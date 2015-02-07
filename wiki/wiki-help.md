@@ -9,12 +9,16 @@ Crazepony网站建设和部署使用了多种开源的技术和平台。
 
 * 站点部署在github上，使用了github page网站服务器功能，并且整个站点框架使用[jekyll](http://jekyllrb.com/)，这是github page支持的静态网站框架。
 * 前端框架使用[bootstrap](https://github.com/twbs/bootstrap)开源项目
-* 百科站点和博客站点内容全部使用markdown标志语言编辑
+* 百科站点和博客站点内容全部使用markdown标志语言编辑。
+
+markdown文本解析库使用了[kramdown](http://kramdown.gettalong.org/)，该库支持的语法是markdown的一个超集，和标准markdown语法有最小的区别。[quick reference](http://kramdown.gettalong.org/quickref.html)提供了kramdown的快速入门，也可以从[syntax page](http://kramdown.gettalong.org/syntax.html)看到对kramdown支持的markdown语法一个更加详细的说明。kramdown和markdown最大的一个语法不同点，就是对代码段的注释不一样，导致原来很多地方需要修改。
+
+> markdown的code段注释为```，而kramdown的code段注释为~~~
 
 ## Crazepony站点源码结构
 Crazepony站点源代码托管在github上，点击[这里](https://github.com/Crazepony/crazepony.github.io)。由于本站点使用了jekyll框架，所以其结构基本上符合jekyll框架结构。
 
-```
+~~~~
 ├── assets              |网页相关的资源文件夹，例如图片，定制css，javascript文件等
 ├── dist                | bootstrap相关文件，包括css，字体，javascript
 ├── _layouts            | 网页模板文件，用于定义网页的header，footer等
@@ -26,8 +30,8 @@ Crazepony站点源代码托管在github上，点击[这里](https://github.com/C
 ├── index.html          | 站点首页（英文）
 ├── README.md           | 本文件
 └── wiki.html           | wiki首页
+~~~~
 
-```
 修改最多的就是wiki目录和posts目录下的源文件，并且都为markdown格式。在文件最开始加入了一个特定格式的头，用于jekyll生成静态网页。
 
 ## 直接在网页上修改
@@ -43,7 +47,7 @@ Crazepony站点源代码托管在github上，点击[这里](https://github.com/C
 ## 将源码下载到本地
 可以将该网站源码clone到本地，进行修改调试。
 
-```
+~~~
 //将github上的源代码clone到本地
 $git clone git@github.com:Crazepony/crazepony.github.io.git
 
@@ -53,7 +57,7 @@ $ git commit -m 'xxxx'
 $ git pull --rebase
 $ git push
 
-```
+~~~
 
 ## 添加新的博客
 
@@ -70,6 +74,8 @@ markdown语法说明：
 * [快速入门](http://wowubuntu.com/markdown/basic.html)
 * [Markdown Basics](https://help.github.com/articles/markdown-basics)
 * [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
+* [kramdown语法快速入门](http://kramdown.gettalong.org/quickref.html)，kramdown支持语法为markdown的超集，和标准markdown稍有不同
+* [kramdown语法详解](http://kramdown.gettalong.org/syntax.html)，kramdown支持语法为markdown的超集
 
 git/github入门：
 

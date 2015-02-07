@@ -1,6 +1,9 @@
 
 #  软件姿态解算
 
+
+> 文中有很多word下编辑的公式尚未加入，需要继续完善
+
 使用MPU6050硬件DMP解算姿态是非常简单的，下面介绍由三轴陀螺仪和加速度计的值来使用四元数软件解算姿态的方法。
 
 我们先来看看如何用欧拉角描述一次平面旋转(坐标变换)：
@@ -51,7 +54,7 @@
 
 所以在软件解算中，我们要首先把加速度计采集到的值(三维向量)转化为单位向量,即向量除以模，传入参数是陀螺仪x,y,z值和加速度计x,y,z值：
 
-```
+~~~
 void IMUupdate(float gx, float gy, float gz, float ax, float ay, float az) {
 float norm;
 float vx, vy, vz;
@@ -62,16 +65,16 @@ ax = ax / norm;
 ay = ay / norm;
 az = az / norm;
 
-```
+~~~
 
 下面把四元数换算成方向余弦中的第三行的三个元素。刚好vx,vy,vz 其实就是上一次的欧拉角（四元数）的机体坐标参考系换算出来的重力的单位向量。
 
-```
+~~~
 // estimated direction of gravity
 vx = 2*(q1*q3 - q0*q2);
 vy = 2*(q0*q1 + q2*q3);
 vz = q0*q0 - q1*q1 - q2*q2 + q3*q3;
-```
+~~~
 axyz是机体坐标参照系上，加速度计测出来的重力向量，也就是实际测出来的重力向量。
 
 axyz是测量得到的重力向量，vxyz是陀螺积分后的姿态来推算出的重力向量，它们都是机体坐标参照系上的重力向量。
@@ -82,16 +85,16 @@ axyz是测量得到的重力向量，vxyz是陀螺积分后的姿态来推算出
 
 这个叉积向量仍旧是位于机体坐标系上的，而陀螺积分误差也是在机体坐标系，而且叉积的大小与陀螺积分误差成正比，正好拿来纠正陀螺。（你可以自己拿东西想象一下）由于陀螺是对机体直接积分，所以对陀螺的纠正量会直接体现在对机体坐标系的纠正。
 
-```
+~~~
 // integral error scaled integral gain
 exInt = exInt + ex*Ki;
 eyInt = eyInt + ey*Ki;
 ezInt = ezInt + ez*Ki;
-```
+~~~
 
 用叉积误差来做PI修正陀螺零偏
 
-```
+~~~
 // integral error scaled integral gain
 exInt = exInt + ex*Ki;
 eyInt = eyInt + ey*Ki;
@@ -101,26 +104,26 @@ ezInt = ezInt + ez*Ki;
 gx = gx + Kp*ex + exInt;
 gy = gy + Kp*ey + eyInt;
 gz = gz + Kp*ez + ezInt;
-```
+~~~
 四元数微分方程，其中T为测量周期，为陀螺仪角速度，以下都是已知量，这里使用了一阶龙哥库塔求解四元数微分方程：
 
 ![](/assets/img/soft-algorithm-6.png)
 
-```
+~~~
 // integrate quaternion rate and normalise
 q0 = q0 + (-q1*gx - q2*gy - q3*gz)*halfT;
 q1 = q1 + (q0*gx + q2*gz - q3*gy)*halfT;
 q2 = q2 + (q0*gy - q1*gz + q3*gx)*halfT;
 q3 = q3 + (q0*gz + q1*gy - q2*gx)*halfT;  
-```
+~~~
 最后根据四元数方向余弦阵和欧拉角的转换关系，把四元数转换成欧拉角：
 
 ![](/assets/img/soft-algorithm-6.png)
 
 所以有：
 
-```
+~~~
 Q_ANGLE.Yaw = atan2(2 * q1 * q2 + 2 * q0 * q3, -2 * q2*q2 - 2 * q3* q3 + 1)* 57.3; // yaw
 Q_ANGLE.Y  = asin(-2 * q1 * q3 + 2 * q0* q2)* 57.3; // pitch
 Q_ANGLE.X = atan2(2 * q2 * q3 + 2 * q0 * q1, -2 * q1 * q1 - 2 * q2* q2 + 1)* 57.3; // roll
-```
+~~~
