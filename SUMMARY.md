@@ -1,6 +1,8 @@
 # Summary
 
   * [闪亮登场](about-crazepony.md)
+      * [入手试飞指导](wiki/user-guide.md)
+      * [组装维修指导](wiki/assemble-guide.md)
   * [四轴飞行器](quad-copter.md)
       * [四轴飞行器历史回顾](wiki/quadcopter-history.md)
       * [开源四轴飞行器](wiki/opensource-quadcopter.md)
@@ -11,8 +13,9 @@
       * [三维中pitch，yaw，roll的区别](wiki/pitch-yaw-roll.md)
       * [四轴飞行器的空气动力原理](wiki/quadcopter-aerodynamic.md)
   * [四轴飞行器基本组成部分](quadcopter-base.md)
-      * [电机和桨叶](wiki/rotor-propeller.md)
+      * [航模电机](wiki/motor-aircraft-model.md)
       * [电机驱动控制](wiki/motor-control-ic.md)
+      * [航模桨叶](wiki/propeller.md)
       * [飞行控制器-主控MCU](wiki/main-controller-mcu.md)
       * [飞行控制器——传感器](wiki/main-controller-sensor.md)
       * [遥控器——2.4G通信](wiki/remote-controller-2-4.md)
@@ -38,6 +41,7 @@
       * [四元数](wiki/quaternions.md)
       * [三轴陀螺仪和三轴加速度计MPU6050](wiki/mpu6050.md)
       * [PID算法](wiki/algorithm-pid.md)
+      * [气压计MS5611](wiki/ms5611.md)
   * [Crazyflie部分原理分析](crazyflie.md)
       * [FreeRTOS简介](wiki/freertos-intro.md)
       * [介绍几个常用的宏的作用](wiki/macro-controls.md)
