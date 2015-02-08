@@ -1,4 +1,4 @@
-Crazepony四轴飞行器书籍
+Crazepony四轴飞行器
 ========
 
 这是配套Crazepony四轴飞行器项目的书籍。使用了[GitBook](https://www.gitbook.com/)管理和发布。
