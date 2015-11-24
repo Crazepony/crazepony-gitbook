@@ -14,7 +14,7 @@ $ sudo apt-get install ruby-dev
 $ sudo gem install rdoc
 
 //安装jekyll
-$ gem install jekyll
+$ sudo gem install jekyll
 ~~~
 
 在本地调试crazepony网站效果：
@@ -47,6 +47,13 @@ $ ruby dk.rb init
 $ ruby dk.rb install
 $ gem install jekyll
 ~~~
+
+
+如果出现安装错误尝试降低jekyll的安装版本,执行以下命令
+~~~
+$ gem install jekyll -v 1.5.0
+~~~
+
 
 Portable Python下载地址[http://portablepython.com/](http://portablepython.com/)。下载python 2.7版本并且安装。
 
