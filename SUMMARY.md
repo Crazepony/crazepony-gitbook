@@ -1,6 +1,6 @@
 # Summary
 
-  * [闪亮登场](about-crazepony.md)
+  * [故事开始](about-crazepony.md)
       * [入手试飞指导](wiki/user-guide.md)
       * [组装维修指导](wiki/assemble-guide.md)
   * [四轴飞行器](quad-copter.md)
@@ -60,3 +60,4 @@
   * [其他](other.md)
       * [Crazepony的板型及结构](wiki/crazepony-construct.md)
       * [源代码的文件编码和文件格式](wiki/source-setting.md)
+      * [关于本书](wiki/about-book.md)

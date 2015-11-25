@@ -1,26 +1,17 @@
-Crazepony四轴飞行器
+Crazepony开源四轴飞行器
 ========
 
-这是配套Crazepony四轴飞行器项目的书籍。使用了[GitBook](https://www.gitbook.com/)管理和发布。
+Crazepony项目旨在为大学生/航模爱好者/创客提供可二次开发的迷你四轴飞行器原型。我们秉承开放，合作，分享的理念，致力将Crazepony打造成航模爱好者学习交流的软硬件平台。Crazepony是一个完全开源的项目，包括源代码，原理图，设计思路等，并且提供详尽的百科知识库。可以通过它学习四轴飞行器相关知识，也可以在上面进行二次开发，实现自己的创意。
 
-书籍的内容来自Crazepony网站[百科wiki](http://www.crazepony.com/wiki.html)，这里只进行了整理和发布，给大家提供在线查看的[Web版本](http://www.crazepony.com/book/)以及可供下载的[PDF版本]()。
+* 网址：http://crazepony.com
+* Wiki：http://crazepony.com/wiki.html
+* 博客：http://crazepony.com/blog.html
+* Github站点：https://github.com/Crazepony
 
-Web版本书籍调试命令：
+![](/assets/img/hand.png)
 
-> gitbook serve ./
 
-在浏览器下输入[http://0.0.0.0:4000](http://0.0.0.0:4000)就可以查看修改效果。
-
-Web版本书籍生成命令：
-
-> gitbook build ./ --output=./outputFolder
-
-在Crazepony网站的[Book目录](http://www.crazepony.com/book/)下的就是使用该命令生成的静态Web版本书籍。
-
-书籍内容来自Crazepony网站wiki，我们会定期将wiki的更新同步到书籍中来。虽然网站wiki和gitbook书籍都是使用markdown语言写成，但是还是有部分头文件不相同。我们专门写了一个python脚本批量将网站wiki的md文件转化为适合gitbook的文件。进入./wiki目录，运行：
-
-> ./deleteline.py
-
+《Crazepony开源四轴飞行器》0.2版本。版本发布历史：
 * 2015-2-7 ，第一次发布，0.1版本。
 * 2015-11-24 ，第二次发布，0.2版本。
 

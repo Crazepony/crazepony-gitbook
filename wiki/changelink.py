@@ -25,7 +25,13 @@ def ChangeLineInFile(infile,isOverwrite):
     title = None
     for line in lines:
         #print type(line)
-        if (line.find("![](/assets/img/") > -1):
+        if (line.find("# ") > -1):
+            line2 = line.replace("# ", "## ")
+            outfp.writelines(line2)
+        elif (line.find("## ") > -1):
+            line2 = line.replace("## ", "### ")
+            outfp.writelines(line2)
+        elif (line.find("![](/assets/img/") > -1):
             line2 = line.replace("![](/assets/img/", "![](../assets/img/")
             outfp.writelines(line2)
         else:
