@@ -1,4 +1,8 @@
-#  关于本书《Crazepony开源四轴飞行器》
+
+#  关于本书
+
+
+> 作者：nieyong
 
 本书《Crazepony开源四轴飞行器》使用了[GitBook](https://www.gitbook.com/)管理和发布。是开源四轴飞行器项目Crazepony配套书籍。
 
@@ -34,6 +38,18 @@ Web版本书籍生成命令：
 
 > ./deleteline.py
 
+## 版权说明
+《Crazepony开源四轴飞行器》全部内容以[Creative Commons署名-非商业性使用-相同方式共享3.0协议](http://creativecommons.org/licenses/by-nc-sa/3.0/)发布。任何个人或者组织的商业用途都是违法的。
+
+知识共享是一个非营利组织，该组织提供同名的一系列著作权许可方式。知识共享组织的主要宗旨是使得著作物能更广为流通与改作，作为其他人据以创作及共享的基础，并以所提供的许可方式确保上述理念。
+
+![](/assets/img/cc-3-0.png)
+
+## 联系我们
+邮箱：`info@crazepony.com`
+
 ## 发布版本记录
+最新版下载地址（PDF）：
+
 * 2015-2-7 ，第一次发布，0.1版本。
 * 2015-11-24 ，第二次发布，0.2版本。
