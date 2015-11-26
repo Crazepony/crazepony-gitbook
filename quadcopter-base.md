@@ -4,3 +4,5 @@
 
 * 动力部分：电机，电机驱动，桨叶
 * 控制部分：MCU，传感器（IMU），遥控通信（2.4G和蓝牙）
+
+![](/assets/img/multi-copter.jpg)

@@ -69,6 +69,6 @@
       * [固件系统流程框架](wiki/system-flow-graph.md)
       * [通信协议](wiki/comm-protocol.md)
   * [其他](other.md)
-      * [Crazepony的板型及结构](wiki/crazepony-construct.md)
+      * [Crazepony的板形轮廓及沉金工艺](wiki/crazepony-construct.md)
       * [源代码的文件编码和文件格式](wiki/source-setting.md)
       * [关于本书](wiki/about-book.md)

@@ -1,4 +1,4 @@
-![](/assets/img/crazepony-logo.png)
+![](/assets/img/crazepony-logo-400.png)
 
 
 Crazepony项目起源于一个孩童从小对摆脱地心引力的梦想。在进入大学之后，终于能够把这个梦想和自己所学结合起来。到现在，Crazepony四轴飞行器已经在硬件上进行了10多次的改进，在软件，算法等方面经历了无数次的挫败和修改。
