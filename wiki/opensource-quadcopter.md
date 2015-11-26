@@ -2,6 +2,8 @@
 #  开源四轴飞行器
 
 
+> 作者：nieyong
+
 ## APM & 3D Robotics
 3D Robotics公司旗下的飞控有3款，分别是ArduPilot（简称APM），PX4和Pihawk。
 

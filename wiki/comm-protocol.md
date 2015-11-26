@@ -2,6 +2,9 @@
 #  通信部分介绍
 
 
+> 作者：nieyong
+
+
 通信协议指的是遥控端和主控之间交互数据的封装，是一种自行约定的数据封装格式。我们采用的是Crazyflie项目中定义的[CRTP协议](http://wiki.bitcraze.se/projects:crazyflie:firmware:comm_protocol)。
 
 遥控端和主控之间数据的交互，物理层可以有下面几种方式：

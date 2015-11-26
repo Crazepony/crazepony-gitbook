@@ -2,6 +2,8 @@
 #  软件框架讲解
 
 
+> 作者：nieyong
+
 飞控源代码部分，都是属于一砖一瓦敲出来的。没有使用实时操作系统（RTOS），我们称之为裸机代码，托管在[Github](https://github.com/Crazepony/crazepony-firmware-none)上，名字为crazepony-firmware-none，尾缀none表示未使用操作系统裸跑的意思。 
 
 那么，现在就结合裸机代码，来说说Crazepony的软件框架。
